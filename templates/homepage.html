@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Designer | Coder Portfolio</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}?{% now 'U' %}" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">FK</div>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/education">Education</a></li>
+        <li><a href="/portfolio">Portfolio</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="socials">
+      <a href="https://www.linkedin.com/in/fhatuwani-kennidy-neluonde-a50708188" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://www.facebook.com/share/1H9rxWWR76/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="https://www.instagram.com/kenny_nelu" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+  </header>
+ 
+  <section class="hero">
+    <div class="overlay">
+      <div class="content">
+  
+        <!-- ✅ Centered typing effect above left + right -->
+        <div class="intro-text">
+          <h2 id="typewriter"></h2>
+        </div>
+  
+        <!-- ✅ Horizontal layout for left and right -->
+        <div class="row">
+          <div class="left">
+            <h1><span class="bold">&lt;Software Dev&gt;</span></h1>
+            <p>Passionate software developer crafting scalable applications and modern digital experiences.</p>
+          </div>
+  
+          <div class="right">
+            <h1><span class="bold coder">&lt;Data Science&gt;</span></h1>
+            <p>Data scientist transforming complex data into actionable insights through elegant code and analysis.</p>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-left">
+        <h3>Fhatuwani Kennidy</h3>
+        <p>Turning ideas into scalable software and smart data solutions.</p>
+      </div>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/education">Education</a>
+        <a href="/portfolio">Portfolio</a>
+        <a href="/contact">Contact</a>
+      </div>
+      <div class="footer-socials">
+       
+        <a href="https://www.linkedin.com/in/fhatuwani-kennidy-neluonde-a50708188?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/kenny10111" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/kenny_nelu?igsh=MTdoeHNyOWJ2ODB5Yg%3D%3D&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; {{ now.year }} Fhatuwani Kennidy. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  <script src="{% static 'js/intro.js' %}"> </script>
+</body>
+
+
+</html>

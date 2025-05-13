@@ -1,0 +1,17 @@
+{
+    "builds": [
+        {
+            "src": "Portfolio/wsgi.py",
+            "use": "@vercel/python",
+            "config": {
+                "distDir": "Portfolio"
+            }
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "Portfolio/wsgi.py"
+        }
+    ]
+}
