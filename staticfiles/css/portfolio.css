@@ -1,0 +1,156 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Segoe UI', sans-serif;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364); /* Dark gradient */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #ffffff;
+}
+
+/* Header styling */
+header {
+  background: rgba(0, 0, 0, 0.85);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: relative;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  border: 2px solid white;
+  padding: 0.3rem 0.7rem;
+  border-radius: 50%;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  text-transform: lowercase;
+}
+
+.socials a {
+  color: white;
+  margin-left: 1rem;
+  font-size: 1.2rem;
+}
+
+/* Portfolio section */
+.portfolio {
+  padding: 4rem 2rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.05); /* Glass effect */
+  border-radius: 16px;
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  color: #fff;
+  margin-bottom: 2rem;
+  text-align: center;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Project grid */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+.project-card h2 {
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+.project-card p {
+  margin-bottom: 1rem;
+  color: #dddddd;
+}
+
+.project-card a {
+  text-decoration: none;
+  color: #00BFFF;
+  font-weight: bold;
+}
+
+/* Highlighted project */
+.project-highlight {
+  margin-top: 4rem;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  backdrop-filter: blur(8px);
+}
+
+.project-highlight h2 {
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.project-highlight p {
+  margin-bottom: 1.5rem;
+  color: #dddddd;
+}
+
+.project-highlight img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+.project-highlight a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background-color: #007BFF;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.project-highlight a:hover {
+  background-color: #0056b3;
+}

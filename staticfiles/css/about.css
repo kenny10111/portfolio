@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Segoe UI', sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
+header {
+  background: #111;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: relative;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  border: 2px solid white;
+  padding: 0.3rem 0.7rem;
+  border-radius: 50%;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  text-transform: lowercase;
+}
+
+.socials a {
+  color: white;
+  margin-left: 1rem;
+  font-size: 1.2rem;
+}
+
+/* Background and Overlay */
+.about {
+  position: relative;
+  min-height: 100vh;
+  background-image: url('../images/image.png'); /* adjust path if needed */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(129, 126, 126, 0.85);
+  z-index: 0;
+}
+
+.about-container {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  background-color: transparent;
+  padding: 2rem;
+  border-radius: 8px;
+  color: #000;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+}
+
+.about h1, .about h2 {
+  margin-bottom: 1rem;
+  color: #111;
+}
+
+.about p, .about li {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.about ul {
+  padding-left: 1.5rem;
+}
